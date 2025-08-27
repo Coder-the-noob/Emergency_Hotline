@@ -27,7 +27,7 @@
     });
   }
 
-
+// Call Button and Call History
 let coins = 100;
 const coinCountEl = document.getElementById("coin-count");
 coinCountEl.innerText = coins;
@@ -55,7 +55,6 @@ for (const card of cards) {
    const div = document.createElement("div");
     div.className = "flex justify-between items-center bg-gray-50 p-3 mb-2 rounded-lg";
 
-    // format current time (only hh:mm:ss AM/PM)
     const now = new Date();
     const timeString = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
 
@@ -76,4 +75,35 @@ for (const card of cards) {
 clearHistoryBtn.addEventListener("click", function () {
   callHistoryList.innerHTML = "";
 });
+
+
+// copy button
+
+let copyCount = 0;
+const copyCountEl = document.getElementById("copyCount"); 
+
+// Select all cards
+const copyCards = document.querySelectorAll(".card");
+
+for (const card of copyCards) {
+  const copyBtn = card.querySelector(".copy-btn");
+  const numberEl = card.querySelector(".service-number");
+
+  if (!copyBtn || !numberEl) continue; 
+
+  copyBtn.addEventListener("click", function() {
+    const hotline = numberEl.textContent.trim();
+
+    navigator.clipboard.writeText(hotline).then(function() {
+      copyCount++;
+      if (copyCountEl) copyCountEl.textContent = copyCount;
+      alert(`Copied: ${hotline}`);
+    }).catch(function(err) {
+      console.error("Failed to copy: ", err);
+      alert(`Failed to copy automatically.\nPlease copy manually: ${hotline}`);
+    });
+  });
+}
+
+
 
