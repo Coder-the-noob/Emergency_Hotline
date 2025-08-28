@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Hotline</title>
 
+    <!-- style link -->
+     <link rel="stylesheet" href="/styles/style.css">
+
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -25,7 +28,7 @@
   </head>
  
   <body>
-    <header class="flex bg-white px-6 py-3">
+    <header class="flex flex-wrap bg-white px-6 py-3">
       <!-- left -->
       <img
         class="w-11 h-11 ml-3 my-3"
@@ -46,7 +49,7 @@
           class="bg-[#41ff6b1a] px-3 py-1 rounded-full flex items-center gap-3 ml-6"
         >
           <span id="heart-count" class="font-bold text-[16px]">0</span>
-          <i class="fa-solid fa-heart text-red-500"></i>
+          <img src="./assets/heart.png" alt="Heart" class="w-5 h-5"/>
         </div>
         <!-- coin -->
         <div
@@ -54,7 +57,7 @@
           class="bg-[#41ff6b1a] px-3 py-1 rounded-full flex items-center gap-3"
         >
           <span id="coin-count" class="font-bold text-[16px]">100</span>
-          <i class="fas fa-coins text-yellow-500"></i>
+            <img src="./assets/coin.png" alt="Coin" class="w-5 h-5"/>
         </div>
 
         <!-- copy -->
@@ -89,14 +92,14 @@
 
     <!-- main section -->
 
-    <div class="bg-[#f5fff6] conatiner mx-auto px-6 py-8 flex flex-col lg:flex-row gap-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
+    <div class="bg-[#f5fff6] container mx-auto px-8 py-10 flex flex-col lg:flex-row gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
         <!-- card-1 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -131,9 +134,9 @@
         <!-- card-2 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -168,9 +171,9 @@
         <!-- card-3 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -205,9 +208,9 @@
         <!-- card-4 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -242,9 +245,9 @@
         <!-- card-5 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -279,9 +282,9 @@
         <!-- card-6 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -316,9 +319,9 @@
         <!-- card-7 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -353,9 +356,9 @@
         <!-- card-8 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
@@ -390,9 +393,9 @@
         <!-- card-9 -->
         <div class="card bg-white rounded-2xl shadow p-5 flex flex-col relative">
           <button
-            class="absolute left-80 top-8 text-gray-400 hover:text-red-500 heart-btn"
+            class="absolute right-4 top-4 text-gray-400 hover:text-red-500 heart-btn"
           >
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart pop"></i>
           </button>
 
           <div class="mb-2">
